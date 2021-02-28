@@ -1,0 +1,26 @@
+{
+  "name": "cheatsheets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saltedfish964/cheatsheets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saltedfish964/cheatsheets/issues"
+  },
+  "homepage": "https://github.com/saltedfish964/cheatsheets#readme",
+  "devDependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/plugin-register-components": "^1.8.2",
+    "vuepress": "^1.8.2"
+  }
+}
