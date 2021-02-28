@@ -14,6 +14,7 @@ module.exports = {
   },
 
   themeConfig: {
+    smoothScroll: true,
     nav: [
       { text: '备忘', link: '/cheatsheets/', ariaLabel: '备忘' },
       { text: '组件', link: '/component/', ariaLabel: '组件' },

@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/saltedfish964/cheatsheets#readme",
   "devDependencies": {
-    "@vuepress/plugin-medium-zoom": "^1.8.2",
-    "@vuepress/plugin-register-components": "^1.8.2",
-    "vuepress": "^1.8.2"
+    "@vuepress/plugin-medium-zoom": "^1.8.0",
+    "@vuepress/plugin-register-components": "^1.8.0",
+    "vuepress": "^1.8.0"
   }
 }
