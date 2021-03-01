@@ -4,6 +4,7 @@ const clickCopy = require('./plugin/click-copy/index');
 const demoContainer = require('./plugin/demo-container/index');
 
 module.exports = {
+  base: '/cheatsheets/',
   title: 'SaltedFish\'s Cheatsheets',
   description: 'SaltedFish\'s Cheatsheets',
 
