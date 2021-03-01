@@ -20,6 +20,9 @@ module.exports = {
       { text: '组件', link: '/component/', ariaLabel: '组件' },
     ],
     sidebar: {
+      '/cheatsheets/': [
+        ['/cheatsheets/', 'npm']
+      ],
       '/component/': [
         {
           title: '开发指南',
