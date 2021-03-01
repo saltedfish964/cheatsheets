@@ -51,7 +51,10 @@ module.exports = {
     },
   },
   plugins: [
-    clickCopy,
+    [clickCopy, {
+      copyMessage: '复制成功',
+      showInMobile: false,
+    }],
     demoContainer,
     '@vuepress/medium-zoom',
     [
