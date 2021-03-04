@@ -22,7 +22,8 @@ module.exports = {
     ],
     sidebar: {
       '/cheatsheets/': [
-        ['/cheatsheets/', 'npm']
+        ['/cheatsheets/', 'Npm'],
+        ['/cheatsheets/git', 'Git'],
       ],
       '/component/': [
         {
