@@ -237,3 +237,188 @@ default:
 ::: tip
 `switch` 会自动 `break`，除非使用 `fallthrough`；`painc` 是一个内建函数，可以中断原有的控制流程；`switch` 后面可以没有表达式。
 :::
+
+## 循环
+
+::: tip
+for 的条件里不需要括号；for 的条件可以省略初始条件，结束条件，递增表达式。
+:::
+
+``` go
+sum := 0
+for i := 1; i <= 100; i++ {
+  sum += i
+}
+```
+
+`while` 循环写法：
+
+``` go
+for a > 10 {
+  // more
+}
+```
+
+死循环写法：
+
+``` go
+for {
+  // more
+}
+```
+
+## 函数
+
+无入参，无返回值函数。
+
+``` go
+func functionName() {
+  // more
+}
+```
+
+有入参，无返回值函数。
+
+``` go
+func functionName(a int, b int) {
+  // more
+}
+```
+
+单个返回值函数。
+
+``` go
+func functionName(a int, b int) int {
+  return a + b
+}
+```
+
+多个返回值函数。
+
+``` go
+func functionName(a int, b int) (int, int) {
+  return a + b, a - b
+}
+```
+
+多个返回值函数，设置返回值名称。
+
+``` go
+func functionName(a int, b int) (resultA, resultB int) {
+  return a + b, a - b
+}
+```
+
+**或者**
+
+``` go
+// 不推荐
+func functionName(a int, b int) (resultA, resultB int) {
+  resultA = a + b
+  resultB = a - b
+  return
+}
+```
+
+## 指针
+
+``` go
+var a int = 5
+var b *int = &a
+*b = 6 // a 的值已经修改为 6
+```
+
+## 数组
+
+使用 `var` 定义数组。
+
+``` go
+var arr [5]int
+```
+
+短语法定义数组。
+
+``` go
+arr := [3]int{1, 2, 3}
+```
+
+定义自动确定长度的数组。
+
+``` go
+arr := [...]int{1, 2, 3, 4, 5}
+```
+
+二维数组定义。
+
+``` go
+var arr [2][2]int
+```
+
+遍历数组。
+
+``` go
+arr := [...]int{1, 2, 3}
+
+for i := 0; i < len(arr); i++ {
+  fmt.Println(arr[i])
+}
+```
+
+`for range` 遍历数组。
+
+``` go
+arr := [3]int{1, 2, 3}
+
+for i, v := range(arr) {
+  fmt.Println(i, v)
+}
+```
+
+::: tip
+数组是值类型。
+:::
+
+## 切片
+
+定义一个切片。
+
+``` go
+var sliceA = []int
+// or
+sliceB := []int{1, 2, 3, 4, 5}
+```
+
+定义一个规定长度的切片。
+
+``` go
+// 定义一个长度为 8 的切片
+sliceA := make([]int, 8)
+```
+
+::: tip
+空切片的默认值为 `nil`。
+:::
+
+向切片添加元素。
+
+``` go
+var sliceA = []int
+sliceA = append(sliceA, 666)
+```
+
+将一个切片复制到另一个切片内。
+
+``` go
+sliceA := []int{1, 2, 3}
+sliceB := make([]int, 10)
+// 将 sliceA 拷贝到 sliceB
+copy(sliceB, sliceA)
+```
+
+删除切片中的某个元素。
+
+``` go
+sliceA := []int{1, 2, 3, 4, 5}
+// 删除第三个元素
+sliceA = append(sliceA[:2], sliceA[3:]...)
+```
