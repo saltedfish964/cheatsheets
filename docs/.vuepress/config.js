@@ -26,6 +26,7 @@ module.exports = {
         ['/cheatsheets/git', 'Git'],
         ['/cheatsheets/go', 'Go'],
         ['/cheatsheets/css', 'Css'],
+        ['/cheatsheets/wechat-mini', '微信小程序'],
       ],
       '/component/': [
         {

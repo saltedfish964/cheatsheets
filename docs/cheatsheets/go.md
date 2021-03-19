@@ -422,3 +422,49 @@ sliceA := []int{1, 2, 3, 4, 5}
 // 删除第三个元素
 sliceA = append(sliceA[:2], sliceA[3:]...)
 ```
+
+## Map
+
+定义一个 `map`。
+
+``` go
+m := map[string]string {
+  "name": "SaltedFish",
+  "age": "18",
+}
+// or
+m := make(map[string]int)
+```
+
+遍历 `map`。
+
+``` go
+m := map[string]string {
+  "name": "SaltedFish",
+  "age": "18",
+}
+for k, v := range m {
+  // more
+}
+```
+
+判断 `map` 中的 `key` 是否已经定义。
+
+``` go
+m := map[string]string {
+  "name": "SaltedFish",
+  "age": "18",
+}
+hobby, ok := m["hobby"]
+// ok 返回 true 或者 false
+```
+
+删除 `map` 中的元素。
+
+``` go
+m := map[string]string {
+  "name": "SaltedFish",
+  "age": "18",
+}
+delete(m, "age")
+```
