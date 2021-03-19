@@ -25,6 +25,7 @@ module.exports = {
         ['/cheatsheets/', 'Npm'],
         ['/cheatsheets/git', 'Git'],
         ['/cheatsheets/go', 'Go'],
+        ['/cheatsheets/css', 'Css'],
       ],
       '/component/': [
         {
