@@ -468,3 +468,71 @@ m := map[string]string {
 }
 delete(m, "age")
 ```
+
+## 结构体
+
+创建一个结构体。
+
+``` go
+type treeNode struct {
+  value int
+  left, right *treeNode
+}
+```
+
+创建结构体实例。
+
+``` go
+type treeNode struct {
+  value int
+  left, right *treeNode
+}
+
+var root treeNode
+
+root = treeNode{ value: 6 }
+root.left = &treeNode{}
+root.right = &treeNode{5, nil, nil}
+root.right.left = new(treeNode)
+```
+
+工厂函数方式创建结构体。
+
+``` go
+func createTreeNode(value int) *treeNode {
+  return &treeNode{ value: value }
+}
+
+type treeNode struct {
+  value int
+  left, right *treeNode
+}
+
+var root treeNode
+root.left = createTreeNode(8)
+```
+
+结构体添加方法。
+
+``` go
+import "fmt"
+
+type treeNode struct {
+  value int
+  left, right *treeNode
+}
+
+func (node treeNode) print() {
+  fmt.Print(node.value)
+}
+
+var root treeNode = treeNode{
+  value: 8
+}
+
+root.print()
+```
+
+::: tip
+接收的 `treeNode` 是值类型。
+:::
