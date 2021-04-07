@@ -552,3 +552,33 @@ root.print()
 `main` 包包含可执行入口。
 
 为结构定义的方法必须放在同一个包内，可以是不同的文件。
+
+## Go 语言依赖管理
+
+> 共有三种依赖管理方法：GOPATH、GOVENDOR 和 go mod。
+
+### GOPATH
+
+默认路径在 `~/go`（unix、linux 下），`%USERPROFILE%\go`（windows 下）。
+
+把所有第三方库都放在一个文件夹下。
+
+### GOVENDOR
+
+在每个项目文件夹内，单独创建 `vendor` 文件夹存放相关依赖。
+
+### go mod
+
+项目文件夹目录下，使用命令行 `go mod init [name]` 初始化 go mod。
+
+``` bash
+go mod init mymod
+```
+ 
+项目文件夹目录下，使用 `go build ./...` 拉取依赖。
+
+``` bash
+go build ./...
+```
+
+项目文件夹目录下，使用 `go mod tidy` 清理未使用的依赖。
