@@ -1,4 +1,4 @@
-## table 一像素边框
+# table 一像素边框
 
 ``` css
 table {

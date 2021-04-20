@@ -22,11 +22,46 @@ module.exports = {
     ],
     sidebar: {
       '/cheatsheets/': [
-        ['/cheatsheets/', 'Npm'],
-        ['/cheatsheets/git', 'Git'],
-        ['/cheatsheets/go', 'Go'],
-        ['/cheatsheets/css', 'Css'],
-        ['/cheatsheets/wechat-mini', '微信小程序'],
+        {
+          title: 'Npm',
+          collapsable: true,
+          sidebarDepth: 1,
+          children: [
+            ['/cheatsheets/', '淘宝镜像'],
+          ]
+        },
+        {
+          title: 'Git',
+          collapsable: true,
+          sidebarDepth: 1,
+          children: [
+            ['/cheatsheets/git/often', '常用命令'],
+          ]
+        },
+        {
+          title: 'Go',
+          collapsable: true,
+          sidebarDepth: 1,
+          children: [
+            ['/cheatsheets/go/base', '基础'],
+          ]
+        },
+        {
+          title: 'CSS',
+          collapsable: true,
+          sidebarDepth: 1,
+          children: [
+            ['/cheatsheets/css/table-border', 'table 边框'],
+          ]
+        },
+        {
+          title: 'Wechat Mini-Program',
+          collapsable: true,
+          sidebarDepth: 1,
+          children: [
+            ['/cheatsheets/wechat-mini-program/playbill', '生成海报'],
+          ]
+        },
       ],
       '/component/': [
         {
