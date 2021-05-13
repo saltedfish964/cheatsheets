@@ -84,6 +84,7 @@ module.exports = {
             'time',
             'animated-number',
             'color',
+            'dark-mode-button',
           ]
         },
       ]
