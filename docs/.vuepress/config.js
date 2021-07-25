@@ -39,19 +39,19 @@ module.exports = {
           ]
         },
         {
-          title: 'Go',
-          collapsable: true,
-          sidebarDepth: 1,
-          children: [
-            ['/cheatsheets/go/base', '基础'],
-          ]
-        },
-        {
           title: 'CSS',
           collapsable: true,
           sidebarDepth: 1,
           children: [
             ['/cheatsheets/css/table-border', 'table 边框'],
+          ]
+        },
+        {
+          title: 'JavaScript',
+          collapsable: true,
+          sidebarDepth: 1,
+          children: [
+            ['/cheatsheets/javascript/merge-table', 'table 合并列相同数据'],
           ]
         },
         {

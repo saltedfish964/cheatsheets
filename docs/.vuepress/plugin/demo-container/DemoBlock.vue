@@ -220,7 +220,7 @@ export default {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   text-align: center;
-  margin-top: -1px;
+  margin-top: -2px;
   color: #d3dce6;
   cursor: pointer;
   position: relative;
