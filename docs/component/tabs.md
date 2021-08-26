@@ -94,9 +94,3 @@ export default {
 | 参数           | 说明                         | 类型             | 可选值            | 默认值         |
 | ------------- |       -------------          | -------------   | -------------    | ------------- |
 | show-content  | 控制 `Content` 部分的显示隐藏  | boolean          | -                | true          |
-
-<style>
-.page {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-}
-</style>
