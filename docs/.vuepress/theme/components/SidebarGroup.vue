@@ -123,17 +123,17 @@ export default {
   margin 0
   border-left 0.25rem solid transparent
   display flex
-  align-items center
   &.open, &:hover
     color inherit
   .arrow-box
     width 20px
+    height 20px
     display flex
-    align-items center
-    justify-content center
   .icon-youjiantou
     margin-right 5px
     font-size 12px
+    position relative
+    top 5px
     transition transform .15s ease
   .icon-down
     transform rotate(90deg)
