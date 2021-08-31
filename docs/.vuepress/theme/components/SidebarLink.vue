@@ -118,9 +118,12 @@ a.sidebar-link
   box-sizing: border-box
   &:hover
     color $accentColor
+    background-color #f8f8f8
+    border-left-color: $accentColor;
   &.active
     font-weight 600
     color $accentColor
+    background-color #f8f8f8
     border-left-color $accentColor
   .sidebar-group &
     padding-left 2rem
@@ -130,4 +133,11 @@ a.sidebar-link
     border-left none
     &.active
       font-weight 500
+
+.sidebar-sub-headers
+  .sidebar-link
+    &:hover
+      background-color transparent
+    &.active
+      background-color transparent
 </style>

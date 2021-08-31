@@ -33,11 +33,10 @@
       :class="{ open }"
       @click="$emit('toggle')"
     >
-      <div class="arrow-box">
+      <div class="arrow-box" v-if="collapsable">
         <span 
-          v-if="collapsable" 
-          class="iconfont icon-youjiantou"
-          :class="open ? 'icon-down' : ''"
+          class="iconfont icon-downarrow"
+          :class="open ? 'icon-down' : 'icon-right'"
         ></span>
       </div>
       <span>{{ item.title }}</span>
@@ -129,14 +128,17 @@ export default {
     width 20px
     height 20px
     display flex
-  .icon-youjiantou
     margin-right 5px
+  .icon-downarrow
     font-size 12px
     position relative
     top 5px
     transition transform .15s ease
+    color $arrowBgColor
+  .icon-right
+    transform rotate(-90deg)
   .icon-down
-    transform rotate(90deg)
+    transform rotate(0)
   &.clickable
     &.active
       font-weight 600
