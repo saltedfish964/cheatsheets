@@ -1,3 +1,5 @@
+import '../.vuepress/styles/font/iconfont.css';
+
 import '../../components/v-icon/iconfont.css';
 import VIcon from '../../components/v-icon/icon.vue';
 

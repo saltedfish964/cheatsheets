@@ -35,7 +35,7 @@
     >
       <div class="arrow-box" v-if="collapsable">
         <span 
-          class="iconfont icon-downarrow"
+          class="iconfont icon-youjiantou"
           :class="open ? 'icon-down' : 'icon-right'"
         ></span>
       </div>
@@ -110,11 +110,12 @@ export default {
       border-left none
 
 .sidebar-heading
-  color $textColor
+  transition 0.2s color linear
+  color var(--color-text-primary)
   transition color .15s ease
   cursor pointer
   font-size 1.1em
-  font-weight bold
+  font-weight 600
   // text-transform uppercase
   padding 0.35rem 1.5rem 0.35rem 1.25rem
   width 100%
@@ -129,16 +130,16 @@ export default {
     height 20px
     display flex
     margin-right 5px
-  .icon-downarrow
+  .icon-youjiantou
     font-size 12px
     position relative
     top 5px
     transition transform .15s ease
     color $arrowBgColor
   .icon-right
-    transform rotate(-90deg)
-  .icon-down
     transform rotate(0)
+  .icon-down
+    transform rotate(90deg)
   &.clickable
     &.active
       font-weight 600

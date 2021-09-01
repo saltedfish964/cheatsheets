@@ -39,7 +39,8 @@ export default {
 
   .nav-links {
     display: none;
-    border-bottom: 1px solid $borderColor;
+    transition 0.2 border linear
+    border-bottom 1px solid var(--border-color)
     padding: 0.5rem 0 0.75rem 0;
 
     a {

@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      "@vuepress/plugin-search@1.8.2",
+      "F:\\cheatsheets"
+    ]
+  ],
+  "_development": true,
+  "_from": "@vuepress/plugin-search@1.8.2",
+  "_id": "@vuepress/plugin-search@1.8.2",
+  "_inBundle": false,
+  "_integrity": "sha1-dLkvZjrPa0Vg4V3ARCqExOh04gY=",
+  "_location": "/@vuepress/plugin-search",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@vuepress/plugin-search@1.8.2",
+    "name": "@vuepress/plugin-search",
+    "escapedName": "@vuepress%2fplugin-search",
+    "scope": "@vuepress",
+    "rawSpec": "1.8.2",
+    "saveSpec": null,
+    "fetchSpec": "1.8.2"
+  },
+  "_requiredBy": [
+    "/@vuepress/theme-default"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/@vuepress/plugin-search/download/@vuepress/plugin-search-1.8.2.tgz?cache=0&sync_timestamp=1613666635890&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vuepress%2Fplugin-search%2Fdownload%2F%40vuepress%2Fplugin-search-1.8.2.tgz",
+  "_spec": "1.8.2",
+  "_where": "F:\\cheatsheets",
+  "author": {
+    "name": "ULIVZ",
+    "email": "chl814@foxmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/vuejs/vuepress/issues"
+  },
+  "description": "search plugin for vuepress",
+  "gitHead": "11eed0f0f105b97a7324cfa8e59d7d27bb966842",
+  "homepage": "https://github.com/vuejs/vuepress/blob/master/packages/@vuepress/plugin-search#readme",
+  "keywords": [
+    "documentation",
+    "generator",
+    "vue",
+    "vuepress"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@vuepress/plugin-search",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/vuepress.git",
+    "directory": "packages/@vuepress/plugin-search"
+  },
+  "version": "1.8.2"
+}

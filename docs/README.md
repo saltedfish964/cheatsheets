@@ -1,6 +1,5 @@
 ---
 home: true
-heroImage: /logo.svg
 heroText: SaltedFish's Cheatsheets
 tagline: 个人笔记，备忘清单
 actionText: 开始浏览 →
